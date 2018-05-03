@@ -50,8 +50,7 @@ export default class BlockQuoteEditing extends Plugin {
 		const command = editor.commands.get( 'blockQuote' );
 
 		// Overwrite default Enter key behavior.
-		// If Enter key is pressed with selection collapsed in empty block inside a quote, break the quote,
-		// unless the Shift key is pressed.
+		// If Enter key is pressed with selection collapsed in empty block inside a quote, break the quote.
 		// This listener is added in afterInit in order to register it after list's feature listener.
 		// We can't use a priority for this, because 'low' is already used by the enter feature, unless
 		// we'd use numeric priority in this case.
@@ -60,9 +59,6 @@ export default class BlockQuoteEditing extends Plugin {
 			const positionParent = doc.selection.getLastPosition().parent;
 
 			if ( doc.selection.isCollapsed && positionParent.isEmpty && command.value ) {
-				if ( data.domEvent && data.domEvent.shiftKey ) {
-					return;
-				}
 				this.editor.execute( 'blockQuote' );
 				this.editor.editing.view.scrollToTheSelection();
 
