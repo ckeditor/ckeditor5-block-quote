@@ -18,6 +18,6 @@
 
 .ck-content blockquote .table:first-child {
 	/* https://github.com/ckeditor/ckeditor5-block-quote/issues/28
-	`16px` = table selection handler height.*/
+	`16px` = table selection handler height. */
 	margin-top: calc(1em + 16px);
 }
