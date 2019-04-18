@@ -12,6 +12,7 @@ import ButtonView from '@ckeditor/ckeditor5-ui/src/button/buttonview';
 
 import quoteIcon from '@ckeditor/ckeditor5-core/theme/icons/quote.svg';
 import '../theme/blockquote.css';
+import '../theme/blockquote-ie11.css';
 
 /**
  * The block quote UI plugin.
