@@ -1,6 +1,10 @@
 CKEditor 5 block quote feature
 ========================================
 
+<h3 align=center>⚠⚠ This repository was moved ⚠⚠</h3>
+
+<p align=center>The package was moved to the <a href="https://github.com/ckeditor/ckeditor5/tree/master/packages">main repository</a>.</p>
+
 [![npm version](https://badge.fury.io/js/%40ckeditor%2Fckeditor5-block-quote.svg)](https://www.npmjs.com/package/@ckeditor/ckeditor5-block-quote)
 [![Dependency Status](https://david-dm.org/ckeditor/ckeditor5-block-quote/status.svg)](https://david-dm.org/ckeditor/ckeditor5-block-quote)
 [![devDependency Status](https://david-dm.org/ckeditor/ckeditor5-block-quote/dev-status.svg)](https://david-dm.org/ckeditor/ckeditor5-block-quote?type=dev)
